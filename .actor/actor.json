@@ -4,6 +4,8 @@
   "title": "StoryVault Africa - Historical & Cultural Intelligence Agent",
   "description": "An AI-powered research agent that scrapes regional web archives, verifies source integrity, and builds structured historical timelines.",
   "version": "1.0",
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
   "meta": {
     "isPayPerEvent": true
   },
