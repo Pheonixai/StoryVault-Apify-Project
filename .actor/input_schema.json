@@ -1,0 +1,15 @@
+{
+  "title": "StoryVault Africa Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "prompt": {
+      "title": "Story Prompt",
+      "type": "string",
+      "description": "Enter the prompt or theme for the African story/narration.",
+      "editor": "textarea",
+      "prefill": "A story about a young girl in the ancient Oyo Empire."
+    }
+  },
+  "required": ["prompt"]
+}

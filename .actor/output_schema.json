@@ -1,0 +1,11 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "StoryVault Africa Output",
+  "type": "object",
+  "properties": {
+    "story": {
+      "title": "Generated Story",
+      "type": "string"
+    }
+  }
+}
