@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StoryVault Africa — Research Workspace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <div class="logo-icon">SV</div>
+      <span class="nav-title">StoryVault Africa</span>
+    </div>
+    <span class="apify-badge">⚡ Powered by Apify Actor</span>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="container">
+
+    <!-- Hero Title -->
+    <div class="hero">
+      <h1>Historical Research Workspace</h1>
+      <p>Automated, source-linked intelligence for African historical subjects.</p>
+    </div>
+
+    <!-- Search Card -->
+    <div class="search-card">
+      <form id="search-form" class="search-box">
+        <input type="text" id="topic-input" placeholder="Enter historical figure, kingdom, or event (e.g. Oyo Empire)..." required />
+        <button type="submit" id="submit-btn">Start Research</button>
+        <button type="button" id="reset-btn" class="btn-secondary hidden">Reset</button>
+      </form>
+    </div>
+
+    <!-- Quick Demo Tags -->
+    <div class="quick-tags">
+      <span>Try demo topics:</span>
+      <span class="tag" onclick="quickSearch('The Oyo Empire')">The Oyo Empire</span>
+      <span class="tag" onclick="quickSearch('Queen Amina of Zazzau')">Queen Amina</span>
+      <span class="tag" onclick="quickSearch('The Benin Kingdom')">Benin Kingdom</span>
+    </div>
+
+    <!-- Loading State -->
+    <div id="loading-state" class="card loading-card hidden">
+      <div class="spinner"></div>
+      <h3>Crawling & Analyzing Public Historical Sources</h3>
+      <p style="color: var(--text-secondary); margin-top: 6px;">Apify Actor is searching configured web archives...</p>
+    </div>
+
+    <!-- Error State -->
+    <div id="error-state" class="card hidden" style="border-left: 4px solid #dc2626; background: #fef2f2;">
+      <h3 style="color: #991b1b; margin-bottom: 4px;">Research Request Failed</h3>
+      <p id="error-message" style="color: #991b1b;"></p>
+    </div>
+
+    <!-- Results Workspace (Hidden until active) -->
+    <div id="results-container" class="hidden">
+      
+      <!-- Tab Navigation -->
+      <nav class="tabs-nav">
+        <button class="tab-btn active" onclick="switchTab('overview')">Overview</button>
+        <button class="tab-btn" onclick="switchTab('timeline')">Timeline</button>
+        <button class="tab-btn" onclick="switchTab('sources')">Audited Sources</button>
+        <button class="tab-btn" onclick="switchTab('integrity')">Integrity & Risks</button>
+      </nav>
+
+      <!-- Tab 1: Overview -->
+      <div id="tab-overview" class="tab-content card">
+        <h2 id="result-topic"></h2>
+        <p id="result-summary" style="color: var(--text-secondary); font-size: 1.05rem;"></p>
+      </div>
+
+      <!-- Tab 2: Timeline -->
+      <div id="tab-timeline" class="tab-content hidden card">
+        <h2>Historical Timeline</h2>
+        <div id="timeline-list"></div>
+      </div>
+
+      <!-- Tab 3: Sources -->
+      <div id="tab-sources" class="tab-content hidden">
+        <h2 style="margin-bottom: 1rem;">Audited Public Sources</h2>
+        <div id="sources-list" class="source-grid"></div>
+      </div>
+
+      <!-- Tab 4: Integrity & Risks -->
+      <div id="tab-integrity" class="tab-content hidden card">
+        <h2>Source Integrity & Conflict Analysis</h2>
+        <div id="warnings-box" class="warning-box">
+          <strong>Security & Attribution Notes:</strong>
+          <ul id="warnings-list"></ul>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

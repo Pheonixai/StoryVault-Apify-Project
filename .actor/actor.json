@@ -1,0 +1,24 @@
+{
+  "actorSpecification": 1,
+  "name": "storyvault-africa-agent",
+  "title": "StoryVault Africa - Historical & Cultural Intelligence Agent",
+  "description": "An AI-powered research agent that scrapes regional web archives, verifies source integrity, and builds structured historical timelines.",
+  "version": "1.0",
+  "meta": {
+    "isPayPerEvent": true
+  },
+  "pricingInfos": [
+    {
+      "pricingModel": "PAY_PER_EVENT",
+      "pricePerUnitUsd": 0.005,
+      "currency": "USD",
+      "pricingPerEvent": {
+        "ACTOR_RUN": {
+          "pricePerUnitUsd": 0.005,
+          "title": "Historical Research Run",
+          "description": "Triggered when a user initiates a deep historical archive search."
+        }
+      }
+    }
+  ]
+}
