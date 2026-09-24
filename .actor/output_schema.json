@@ -5,7 +5,8 @@
   "properties": {
     "story": {
       "title": "Generated Story",
-      "type": "string"
+      "type": "string",
+      "template": "{{linksTo self}}"
     }
   }
 }
