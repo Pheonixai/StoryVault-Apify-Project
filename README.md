@@ -1,4 +1,3 @@
-
 # StoryVault Africa 🇳🇬
 
 ### AI-Assisted Historical and Cultural Research Actor
@@ -43,7 +42,7 @@ Our goal is to make African historical and cultural research more accessible, or
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 Historical and cultural information about Africa is often distributed across different websites, archives, articles, educational platforms, digital libraries, and institutional resources.
 
@@ -83,11 +82,10 @@ AI, Web Scraping, Research Automation, African History, Cultural Preservation, E
 
 ### Project Link
 
-[Insert the verified Apify Actor URL here]
 
 ---
 
-## 🎯 The Problem
+## The Problem
 
 Researching African history and culture can be difficult for several reasons.
 
@@ -121,7 +119,7 @@ There is an opportunity to build tools that improve access to this information w
 
 ---
 
-## 💡 Our Solution
+## Our Solution
 
 StoryVault Africa is an AI-assisted research Actor that collects publicly available information about a selected historical or cultural topic and organizes the results into a structured research pack.
 
@@ -145,7 +143,7 @@ It is designed to reduce repetitive research work and support better-informed hu
 
 ---
 
-## 🌍 Why StoryVault Matters
+## Why StoryVault Matters
 
 StoryVault combines research automation with African historical and cultural discovery.
 
@@ -166,7 +164,7 @@ The long-term vision is to support a research ecosystem where African historical
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 ### 1. Topic-Based Research
 
@@ -317,9 +315,7 @@ Possible integrations include:
 - Academic research applications
 
 ---
-
-## 🔄 How StoryVault Works
-
+## How StoryVault Works
 The general workflow is:
 
 ```text
@@ -380,8 +376,7 @@ The user reviews the results, checks the sources, and conducts additional verifi
 
 ---
 
-## 🏗️ System Architecture
-
+## System Architecture
 The proposed StoryVault architecture consists of the following components:
 
 ```text
@@ -527,7 +522,6 @@ Apify provides infrastructure for running Actors, collecting data, storing struc
 - Run monitoring
 
 ### Why Apify?
-
 Apify allows StoryVault to focus on its research use case while leveraging existing infrastructure for web automation and data processing.
 
 This can reduce the need to build an entire crawling and execution infrastructure from scratch.
@@ -536,8 +530,7 @@ Apify also provides opportunities for future integration with other Actors, APIs
 
 ---
 
-## ⚙️ Input Configuration
-
+## Input Configuration
 The input schema must match the actual input schema configured in the Apify Actor.
 
 The following is an illustrative example:
@@ -588,7 +581,7 @@ The actual input fields, default values, and validation rules should be confirme
 
 ---
 
-## 📦 Output Structure
+## Output Structure
 
 The Actor's output schema must reflect the actual data returned by the deployed implementation.
 
